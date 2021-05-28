@@ -1,6 +1,6 @@
 # CS/ECE/ME/EP 759 Spring 2021 Final Project
 
-This README contains the code base for Rui Pan's final project report: Cautiously Aggressive GPU Space Sharing in Multi-Tenant Clusters.
+This README contains the code base for Rui Pan's final project report: Cautiously Aggressive GPU Space Sharing to Improve Resource Utilization and Job Efficiency.
 
 Some of the prerequisites for replicating the results include:
 
