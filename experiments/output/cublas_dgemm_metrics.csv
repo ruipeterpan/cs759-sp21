@@ -1,9 +1,0 @@
-==54900== NVPROF is profiling process 54900, command: ./me759/cublas_dgemm 512 1000
-==54900== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
-==54900== Profiling application: ./me759/cublas_dgemm 512 1000
-==54900== Profiling result:
-==54900== Metric result:
-"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
-"Tesla V100-PCIE-16GB (0)","volta_dgemm_128x64_nn",1000,"tensor_precision_fu_utilization","Tensor-Precision Function Unit Utilization","Idle (0)","Idle (0)","Idle (0)"
-"Tesla V100-PCIE-16GB (0)","volta_dgemm_128x64_nn",1000,"single_precision_fu_utilization","Single-Precision Function Unit Utilization","Low (1)","Low (1)","Low (1)"
-"Tesla V100-PCIE-16GB (0)","volta_dgemm_128x64_nn",1000,"double_precision_fu_utilization","Double-Precision Function Unit Utilization","Mid (6)","Mid (6)","Mid (6)"

@@ -1,0 +1,42 @@
+==51937== NVPROF is profiling process 51937, command: ./me759/cublas_dgemm 512 10
+==51937== Profiling application: ./me759/cublas_dgemm 512 10
+==51937== Profiling result:
+"Type","Time(%)","Time","Calls","Avg","Min","Max","Name"
+,%,ms,,us,us,ms,
+"GPU activities",99.635287,3.715087,10,371.508000,84.223000,2.946746,"volta_dgemm_128x64_nn"
+"GPU activities",0.325235,0.012127,10,1.212000,1.151000,0.001504,"[CUDA memset]"
+"GPU activities",0.039478,0.001472,1,1.472000,1.472000,0.001472,"[CUDA memcpy HtoD]"
+"API calls",74.508086,812.553067,10,81255.306000,0.946000,458.091641,"cudaFree"
+"API calls",24.570703,267.957493,3,89319.164000,36.729000,267.839611,"cudaMallocManaged"
+"API calls",0.628769,6.857083,14,489.791000,1.473000,6.081329,"cudaDeviceSynchronize"
+"API calls",0.182991,1.995624,3,665.208000,660.376000,0.670885,"cuDeviceTotalMem"
+"API calls",0.034279,0.373833,297,1.258000,0.149000,0.055548,"cuDeviceGetAttribute"
+"API calls",0.027539,0.300328,4,75.082000,5.773000,0.148564,"cudaMalloc"
+"API calls",0.011585,0.126342,10,12.634000,6.539000,0.031333,"cudaLaunchKernel"
+"API calls",0.007607,0.082959,10,8.295000,3.675000,0.039903,"cudaMemsetAsync"
+"API calls",0.007439,0.081130,120,0.676000,0.413000,0.003902,"cudaFuncSetAttribute"
+"API calls",0.006802,0.074183,3,24.727000,21.613000,0.027540,"cuDeviceGetName"
+"API calls",0.002736,0.029836,1,29.836000,29.836000,0.029836,"cudaMemcpy"
+"API calls",0.002650,0.028904,12,2.408000,1.233000,0.008399,"cudaEventRecord"
+"API calls",0.001724,0.018806,20,0.940000,0.588000,0.003651,"cudaOccupancyMaxActiveBlocksPerMultiprocessorWithFlags"
+"API calls",0.001549,0.016891,10,1.689000,1.215000,0.004005,"cudaEventQuery"
+"API calls",0.001080,0.011773,18,0.654000,0.477000,0.002304,"cudaEventCreateWithFlags"
+"API calls",0.001020,0.011127,18,0.618000,0.476000,0.002142,"cudaEventDestroy"
+"API calls",0.000601,0.006550,12,0.545000,0.319000,0.001616,"cudaDeviceGetAttribute"
+"API calls",0.000531,0.005791,2,2.895000,0.971000,0.004820,"cudaEventCreate"
+"API calls",0.000518,0.005653,1,5.653000,5.653000,0.005653,"cudaEventSynchronize"
+"API calls",0.000477,0.005203,1,5.203000,5.203000,0.005203,"cudaEventElapsedTime"
+"API calls",0.000271,0.002950,2,1.475000,1.103000,0.001847,"cuInit"
+"API calls",0.000221,0.002406,1,2.406000,2.406000,0.002406,"cuDeviceGetPCIBusId"
+"API calls",0.000197,0.002144,10,0.214000,0.180000,0.000420,"cudaGetLastError"
+"API calls",0.000178,0.001939,1,1.939000,1.939000,0.001939,"cudaGetDevice"
+"API calls",0.000174,0.001901,5,0.380000,0.182000,0.000826,"cuDeviceGetCount"
+"API calls",0.000107,0.001166,4,0.291000,0.170000,0.000469,"cuDeviceGet"
+"API calls",0.000085,0.000922,3,0.307000,0.272000,0.000344,"cuDeviceGetUuid"
+"API calls",0.000082,0.000893,2,0.446000,0.438000,0.000455,"cuDriverGetVersion"
+
+==51937== Unified Memory profiling result:
+"Device","Count","Avg Size","Min Size","Max Size","Total Size","Total Time",""
+"Tesla V100-PCIE-16GB (0)",164,37.462891KB,4.000000KB,752.000000KB,6.000000MB,0.000000,"Host To Device"
+"Tesla V100-PCIE-16GB (0)",,,,,9B,0.000000,"Gpu page fault groups"
+Total CPU Page faults: 18

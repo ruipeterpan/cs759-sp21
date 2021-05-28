@@ -1,4 +1,0 @@
-,name,tensor_util,single_util,double_util,time_%,time_ms,calls,avg_ms
-0,volta_dgemm_128x64_nn,0,1,6,99.635287,3.715087,10,371.508
-1,[CUDA memset],0,0,0,0.325235,0.012127,10,1.212
-2,[CUDA memcpy HtoD],0,0,0,0.039478,0.001472,1,1.472
